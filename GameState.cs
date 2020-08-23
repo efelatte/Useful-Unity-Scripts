@@ -6,6 +6,8 @@ using UnityEngine;
 public class GameState : MonoBehaviour
 {
 
+    public static Gamestate instance; 
+
     private void Awake()
     {
 
@@ -67,10 +69,6 @@ public class GameState : MonoBehaviour
 
     public void LoadGame()
     {
-
-        PlayerControls.FreezeMovement = true;
-        Cursor.visible = false;
-
 
         if (File.Exists(Application.persistentDataPath + "/Gamestate.dat"))
         {
