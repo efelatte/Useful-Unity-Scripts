@@ -9,14 +9,14 @@ public class BringYourFriend : MonoBehaviour
     private void OnEnable()
     {
 
-        friend.setActive(true);
+        friend.SetActive(true);
 
     }
 
     private void OnDisable()
     {
 
-        friendBar.SetActive(false);
+        friend.SetActive(false);
 
     }
 
