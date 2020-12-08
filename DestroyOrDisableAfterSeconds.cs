@@ -33,14 +33,10 @@ public class DestroyOrDisableAfterSeconds : MonoBehaviour
         yield return new WaitForSecondsRealtime(SecondsToWait);
 
         if (InstantiateBeforeDeactivation)
-        {
             Instantiate(ObjectToInstantiate, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-        }
 
         if (ExtraSecondsToWaitAfterInstantiate > 0.1f)
-        {
             yield return new WaitForSeconds(ExtraSecondsToWaitAfterInstantiate);
-        }
 
         if (currentAction == Action.Destroy)
         {
