@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FadeCanvas : MonoBehaviour
+public class FadeCanvasGroup : MonoBehaviour
 {
 
     CanvasGroup canvasGroup;
