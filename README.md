@@ -1,1 +1,1 @@
-# Collection of useful Unity Stuff
+collection of useful c# scripts for unity
